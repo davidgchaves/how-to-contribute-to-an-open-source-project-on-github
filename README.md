@@ -140,6 +140,7 @@ Apply:
 
 1. `--set-upstream` is equivalent to `-u`.
 2. `push`ing updates to a `pull request` **will not** notify to the project mantainer, or anyone else watching the `pull request`.
+3. Remember to **always** `git fetch upstream` before `git push`.
 
 ## <a id="links">13. Links</a>
 
