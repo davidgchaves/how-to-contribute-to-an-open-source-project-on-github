@@ -7,7 +7,7 @@
 3. [Sync data](#sync-data)
 4. [Create the Pull Request `branch`](#create-the-pull-request-branch)
 5. [Make changes locally](#make-changes-locally)
-6. [`push` changes to the original project](#push-changes-to-the-original-project)
+6. [`push` changes to your `fork`ed project](#push-changes-to-your-forked-project)
 7. [Create your Pull Request on the Original Project](#create-your-pull-request-on-the-original-project)
 8. [Make some new changes locally](#make-some-new-changes-locally)
 9. [Execute the CI scripts locally and `push`](#execute-the-ci-scripts-locally-and-push)
@@ -56,7 +56,7 @@ We used the completely arbitrary `pull-request` namespace.
 ➜ git commit -m "WIP: Almost there"
 ```
 
-## <a id="push-changes-to-the-original-project">6. `push` changes to the original project</a>
+## <a id="push-changes-to-your-forked-project">6. `push` changes to your `fork`ed project</a>
 
 We can push directly:
 
@@ -67,7 +67,7 @@ We can push directly:
 ...or even better, specify the `upstream` for our `pull-request/<MY_PR_BRANCH>` and `push`, then:
 
 ```console
-➜ git push --set-upstream github pull-request/MY_PR_BRANCH
+➜ git push --set-upstream github pull-request/<MY_PR_BRANCH>
 ➜ git push
 ```
 
@@ -139,7 +139,7 @@ Apply:
 ## <a id="notes">12. Notes</a>
 
 1. `--set-upstream` is equivalent to `-u`.
-2. `push`ing updates to a `pull request` **will not** notify to the project mantainer, or anyone else watching the `pull request`.
+2. `push`ing updates to a `pull request` **will not** notify to the project maintainer, or anyone else watching the `pull request`.
 3. Remember to **always** `git fetch upstream` before `git push`.
 
 ## <a id="links">13. Links</a>
